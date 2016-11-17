@@ -32,7 +32,7 @@ Run the following in your project root, assuming you have composer set up for yo
 
 ```sh
 
-composer.phar require avtonom/semaphore-bundle ~1.1
+composer.phar require avtonom/sms-streamtelecom-bundle ~1.1
 
 ```
 
@@ -88,6 +88,8 @@ services:
         arguments: [sms]
     
 ```
+
+#### Use
 
 ``` php
 
