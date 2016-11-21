@@ -28,9 +28,9 @@
     }
   ],
   "autoload": {
-    "psr-0": { "Avtonom\\Sms\\SmsStreamtelecomBundle": "" }
+    "psr-0": { "Avtonom\\Sms\\StreamtelecomBundle": "" }
   },
-  "target-dir": "Avtonom/Sms/SmsStreamtelecomBundle",
+  "target-dir": "Avtonom/Sms/StreamtelecomBundle",
   "extra": {
     "branch-alias": {
       "dev-master": "1.2.x-dev"
