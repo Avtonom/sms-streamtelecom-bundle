@@ -17,11 +17,20 @@
     "symfony/monolog-bundle": "2.*",
     "kphoen/sms-sender-bundle": "dev-master"
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url":  "git@github.com:Avtonom/KPhoenSmsSenderBundle.git"
+    },
+    {
+      "type": "vcs",
+      "url":  "git@github.com:Avtonom/SmsSender.git"
+    }
+  ],
   "autoload": {
     "psr-0": { "Avtonom\\SmsStreamtelecomBundle": "" }
   },
   "target-dir": "Avtonom/SmsStreamtelecomBundle",
-  "minimum-stability": "dev",
   "extra": {
     "branch-alias": {
       "dev-master": "1.2.x-dev"
