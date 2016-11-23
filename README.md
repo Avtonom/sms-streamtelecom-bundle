@@ -44,6 +44,7 @@ Add the bundle to app/AppKernel.php
 
 $bundles(
     ...
+       new KPhoen\SmsSenderBundle\KPhoenSmsSenderBundle(),
        new Avtonom\Sms\StreamtelecomBundle\AvtonomSmsStreamtelecomBundle(),
     ...
 );
@@ -57,7 +58,7 @@ Configuration options (config.yaml):
 k_phoen_sms_sender:
     pool:         ~   # right now, only "memory" is supported
     providers:    [streamtelecom]
-    factories:    [ "%kernel.root_dir%/../src/Avtonom/Sms/StreamtelecomBundle/Resources/config/provider_factories.xml" ]
+    factories:    [ "%kernel.root_dir%/../vendor/avtonom/sms-streamtelecom-bundle/Avtonom/Sms/StreamtelecomBundle/Resources/config/provider_factories.xml" ]
 
     streamtelecom:
         login:     %sms.provider.streamtelecom.login%
@@ -77,7 +78,7 @@ parameters:
     
 ```
 
-Create a logger named "avtonom_sms.logger". Cample code (services.yml): 
+Create a logger named "avtonom_sms.logger". Sample code (services.yml): 
 
 ``` yaml
 
